@@ -41,19 +41,19 @@ class _IntroScreenState extends State<IntroScreen> {
       'skip': true
     },
     {
-      'color': '#B3B152',
-      'title': 'John Smith',
-      'image': 'assets/images/johnsmith_cid2.png',
-      'description':
-          'Thread king, the most classic morph. he who dances with the thread to win',
-      'skip': true
-    },
-    {
       'color': '#8D1F1F',
       'title': 'Jack The Ripper',
       'image': 'assets/images/jacktr_cid.png',
       'description':
           'king of laughter, the most terrible morph. always laughing, defeat is a funny myth',
+      'skip': true
+    },
+    {
+      'color': '#B3B152',
+      'title': 'John Smith',
+      'image': 'assets/images/johnsmith_cid2.png',
+      'description':
+          'Thread king, the most classic morph. he who dances with the thread to win',
       'skip': false
     },
   ];
@@ -118,9 +118,9 @@ class _IntroScreenState extends State<IntroScreen> {
     if (_activePage == 0) {
       color = '#30005A';
     } else if (_activePage == 1) {
-      color = '#B3B152';
-    } else {
       color = '#8D1F1F';
+    } else {
+      color = '#B3B152';
     }
 
     return AnimatedContainer(
